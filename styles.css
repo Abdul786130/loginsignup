@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 6%; /* Top margin for spacing */
+    display: flex; /* Flexbox for layout */
+    max-width: 1000px; /* Maximum container width */
+    width: 100%; /* Full width */
+    height: 80vh; /* Fixed height */
+    border-radius: 10px; /* Rounded corners */
+    gap: 10%; /* Space between child elements */
+    justify-content: center; /* Center child elements */
+    background-color: rgb(216, 216, 216); /* Light background color */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.container:hover {
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25); /* Slightly deeper shadow on hover */
+}
+
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input{
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.checkbox {
+    display: flex; /* Align checkbox and label in a row */
+    align-items: center; /* Vertically center the elements */
+    gap: 10px; /* Space between checkbox and text */
+    margin-top: 15px; /* Space above the checkbox */
+    font-family: 'Poppins', sans-serif; /* Consistent font styling */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #555; /* Neutral text color */
+}
+
+input[type="checkbox"] {
+    width: 18px; /* Set size for checkbox */
+    height: 18px; /* Match width for a square */
+    accent-color: #4e7e2c; /* Custom green checkbox color */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.checkbox-label {
+    color: #555; /* Neutral color */
+    font-size: 0.95rem; /* Standard font size */
+}
+
+.terms-link {
+    color: #4e7e2c; /* Eye-catching green for the link */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Slightly bold for emphasis */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.terms-link:hover {
+    color: #333; /* Darker green on hover */
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle glow effect */
+}
+
+
+.signup-button {
+    padding-top: 3%; /* Top padding for vertical spacing */
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Padding for comfortable button size */
+    background-color: #4e7e2c; /* Green color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 18px; /* Font size for better readability */
+    margin-top: 3%; /* Margin from elements above */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.signup-button:hover {
+    background-color: #333; /* Darker background on hover */
+    color: aliceblue; /* Slightly lighter text color */
+}
+
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+    color: #999;
+}
+
+.login_btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.signin {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-size: 1rem; /* Standard text size */
+    color: #555; /* Neutral text color */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Space above */
+    line-height: 1.5; /* Proper line height for readability */
+}
+
+.signin-link {
+    color: #4e7e2c; /* Eye-catching green color */
+    font-weight: 600; /* Slightly bold for emphasis */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.signin-link:hover {
+    color: #333; /* Darker color on hover */
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle text glow effect */
+}
+
+
+.image-part {
+    flex: 1;
+    background-color: #f9f9f9;
+}
+
+.image-part img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.login_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.google-button,
+.apple-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.google-button {
+    background-color: #4285f4;
+    color: white;
+    box-shadow: 0 4px 6px rgba(66, 133, 244, 0.3);
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.google-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(66, 133, 244, 0.4);
+}
+
+.apple-button {
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.apple-button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* Ensures white logo appears on black button */
+}
+
+.apple-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 768px) {
+    .google-button,
+    .apple-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+h1 {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    font-size: 2.5rem; /* Large font size for emphasis */
+    font-weight: 700; /* Bold for strong visual hierarchy */
+    color: #333; /* Dark color for readability */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Space below the heading */
+    letter-spacing: 1.5px; /* Slight spacing between letters */
+    text-transform: uppercase; /* Uppercase for impact */
+    line-height: 1.3; /* Adjust line height for readability */
+}
+
